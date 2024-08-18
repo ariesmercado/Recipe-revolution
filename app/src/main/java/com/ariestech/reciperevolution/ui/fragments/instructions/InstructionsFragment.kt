@@ -1,6 +1,7 @@
 package com.ariestech.reciperevolution.ui.fragments.instructions
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -29,6 +30,7 @@ class InstructionsFragment : Fragment() {
         if (myBundle != null) {
             binding.instructionsWebView.webViewClient = object : WebViewClient() {}
             val websiteUrl: String = myBundle.sourceUrl
+            Log.d("InstructionsFragment","websiteUrl -> $websiteUrl")
             binding.instructionsWebView.loadUrl(websiteUrl)
         }
 

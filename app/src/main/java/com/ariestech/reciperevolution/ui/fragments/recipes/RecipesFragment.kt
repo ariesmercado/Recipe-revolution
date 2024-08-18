@@ -200,6 +200,8 @@ class RecipesFragment : Fragment(), SearchView.OnQueryTextListener {
                 is NetworkResult.Loading -> {
                     showShimmerEffect()
                 }
+
+                else -> {}
             }
         }
     }
